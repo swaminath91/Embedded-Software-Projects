@@ -1,0 +1,65 @@
+--sign_div_unsign DEN_REPRESENTATION="UNSIGNED" DEN_WIDTH=28 LPM_PIPELINE=0 MAXIMIZE_SPEED=5 NUM_REPRESENTATION="SIGNED" NUM_WIDTH=46 SKIP_BITS=0 denominator numerator quotient remainder
+--VERSION_BEGIN 14.1 cbx_cycloneii 2014:12:03:18:04:04:SJ cbx_lpm_abs 2014:12:03:18:04:04:SJ cbx_lpm_add_sub 2014:12:03:18:04:04:SJ cbx_lpm_divide 2014:12:03:18:04:04:SJ cbx_mgl 2014:12:03:18:06:09:SJ cbx_stratix 2014:12:03:18:04:04:SJ cbx_stratixii 2014:12:03:18:04:04:SJ cbx_util_mgl 2014:12:03:18:04:04:SJ  VERSION_END
+
+
+-- Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+--  Your use of Altera Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Altera Program License 
+--  Subscription Agreement, the Altera Quartus II License Agreement,
+--  the Altera MegaCore Function License Agreement, or other 
+--  applicable license agreement, including, without limitation, 
+--  that your use is for the sole purpose of programming logic 
+--  devices manufactured by Altera and sold by Altera or its 
+--  authorized distributors.  Please refer to the applicable 
+--  agreement for further details.
+
+
+FUNCTION alt_u_div_c3f (denominator[27..0], numerator[45..0])
+RETURNS ( quotient[45..0], remainder[27..0]);
+
+--synthesis_resources = lut 1003 
+SUBDESIGN sign_div_unsign_ggh
+( 
+	denominator[27..0]	:	input;
+	numerator[45..0]	:	input;
+	quotient[45..0]	:	output;
+	remainder[27..0]	:	output;
+) 
+VARIABLE 
+	divider : alt_u_div_c3f;
+	adder_result_int[28..0]	:	WIRE;
+	adder_cin	:	WIRE;
+	adder_dataa[27..0]	:	WIRE;
+	adder_datab[27..0]	:	WIRE;
+	adder_result[27..0]	:	WIRE;
+	adder_out[27..0]	: WIRE;
+	gnd_wire	: WIRE;
+	neg_num[45..0]	: WIRE;
+	neg_quot[45..0]	: WIRE;
+	norm_num[45..0]	: WIRE;
+	protect_quotient[45..0]	: WIRE;
+	protect_remainder[27..0]	: WIRE;
+
+BEGIN 
+	divider.denominator[] = denominator[];
+	divider.numerator[] = norm_num[];
+	adder_result_int[] = (adder_dataa[], 0) - (adder_datab[], !adder_cin);
+	adder_result[] = adder_result_int[28..1];
+	adder_cin = gnd_wire;
+	adder_dataa[] = denominator[];
+	adder_datab[] = protect_remainder[];
+	adder_out[] = adder_result[];
+	gnd_wire = B"0";
+	neg_num[] = (! numerator[]);
+	neg_quot[] = (! protect_quotient[]);
+	norm_num[] = ((numerator[] & (! numerator[45..45])) # (neg_num[] & numerator[45..45]));
+	protect_quotient[] = divider.quotient[];
+	protect_remainder[] = divider.remainder[];
+	quotient[] = ((protect_quotient[] & (! numerator[45..45])) # (neg_quot[] & numerator[45..45]));
+	remainder[] = ((protect_remainder[] & (! numerator[45..45])) # (adder_out[] & numerator[45..45]));
+END;
+--VALID FILE
