@@ -1,0 +1,8 @@
+The hough_snap_test.cpp is the source code file, which is run on a embedded linux platform, that uses OpenCV libraries to make a continuous capture of frames of data in .ppm format
+The frames are captured continuously at 1 frame per second using systick clock timer with the help of appropriate sleep delay.
+The captured frames are timestamped along with the header information. 
+The captured frames are reconstructed using H264 mpeg codec into a timelapse reconstructed video to show that capture is made at exact frame rate and all the frames meet the deadlines and avoid latency and jitter
+There's text file named cap2000.txt which shows the timestamp information when the executable was ran on a Linux terminal.
+By measuring the average frame rate along with the captured times of alternate frames, we can calculate the jitter.
+This source code file, only makes the camera capture and store the frames in ppm format with timestamp embedded on each frame of image. Reconstruction of the video doesn't need a driver program and can be done on the Linux terminal by using FFMPEG commands.
+I have attached some sample frames of capture(snapshot_ .ppm) using this cpp source code file.
