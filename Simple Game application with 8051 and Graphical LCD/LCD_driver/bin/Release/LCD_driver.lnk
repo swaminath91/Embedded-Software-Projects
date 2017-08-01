@@ -1,0 +1,17 @@
+-myuxi
+-Y
+-w 0xffff
+-b HOME = 0x0000
+-b XSEG = 0x3000
+-b ISEG = 0x0080
+-b BSEG = 0x0000
+-k C:\Program Files (x86)\sdcc\lib
+-k C:\Program Files (x86)\SDCC\bin\..\lib\large
+-l mcs51
+-l libsdcc
+-l libint
+-l liblong
+-l libfloat
+obj\Release\main.rel
+
+-e

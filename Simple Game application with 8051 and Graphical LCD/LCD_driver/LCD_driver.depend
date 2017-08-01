@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1461025046 source:d:\cover letters\gcc projects\lcd_driver\main.c
+	<at89c51ed2.h>
+	<mcs51reg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lcd_driver.h"
+
+1461017727 d:\cover letters\gcc projects\lcd_driver\lcd_driver.h
+
+1461021013 source:d:\cover letters\gcc projects\lcd_driver\spi_driver.c
+	"main.h"
+	"spi_driver.h"
+
+1461112934 d:\cover letters\gcc projects\lcd_driver\main.h
+	<at89c51ed2.h>
+	<mcs51reg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"serial.h"
+	"timer.h"
+	"spi_driver.h"
+
+1458273426 d:\cover letters\gcc projects\lcd_driver\timer.h
+
+1461025046 d:\cover letters\gcc projects\lcd_driver\spi_driver.h
+
+1461559774 source:d:\cover letters\lcd_driver\main.c
+	<at89c51ed2.h>
+	<mcs51reg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lcd_driver.h"
+
+1461017727 d:\cover letters\lcd_driver\lcd_driver.h
+
+1461882719 source:h:\esd\my_final_projrct\final_project_submission\code\lcd_driver\main.c
+	<at89c51ed2.h>
+	<mcs51reg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"lcd_driver.h"
+
+1461882862 h:\esd\my_final_projrct\final_project_submission\code\lcd_driver\lcd_driver.h
+
