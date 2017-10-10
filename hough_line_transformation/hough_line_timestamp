@@ -1,0 +1,60 @@
+Script started on Sun 07 May 2017 11:44:22 AM MDT
+swaminath@Swaminath: ~/Videos/faceDetect_sample/Project_comp_arch
+swaminath@Swaminath:~/Videos/faceDetect_sample/Project_comp_arch$ ./hough_trans
+using default
+System time is :Sun May  7 11:44:28 2017
+ Frame @ 1494179068 sec, 387767233 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 1
+System time is :Sun May  7 11:44:29 2017
+ Frame @ 1494179069 sec, 506499180 nsec,dt=1494179068000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 2
+System time is :Sun May  7 11:44:30 2017
+ Frame @ 1494179070 sec, 196798539 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 3
+System time is :Sun May  7 11:44:31 2017
+ Frame @ 1494179071 sec, 246693467 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 4
+System time is :Sun May  7 11:44:32 2017
+ Frame @ 1494179072 sec, 300393326 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 5
+System time is :Sun May  7 11:44:33 2017
+ Frame @ 1494179073 sec, 405834381 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 6
+System time is :Sun May  7 11:44:34 2017
+ Frame @ 1494179074 sec, 63151368 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 7
+System time is :Sun May  7 11:44:35 2017
+ Frame @ 1494179075 sec, 166502441 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 8
+System time is :Sun May  7 11:44:36 2017
+ Frame @ 1494179076 sec, 256875414 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 9
+System time is :Sun May  7 11:44:37 2017
+ Frame @ 1494179077 sec, 335776451 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 10
+System time is :Sun May  7 11:44:38 2017
+ Frame @ 1494179078 sec, 386256818 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 11
+System time is :Sun May  7 11:44:39 2017
+ Frame @ 1494179079 sec, 495513877 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 12
+System time is :Sun May  7 11:44:40 2017
+ Frame @ 1494179080 sec, 210036828 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 13
+System time is :Sun May  7 11:44:41 2017
+ Frame @ 1494179081 sec, 254981772 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 14
+System time is :Sun May  7 11:44:42 2017
+ Frame @ 1494179082 sec, 385441049 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 15
+System time is :Sun May  7 11:44:43 2017
+ Frame @ 1494179083 sec, 438757197 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 16
+System time is :Sun May  7 11:44:44 2017
+ Frame @ 1494179084 sec, 168049399 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 17
+System time is :Sun May  7 11:44:45 2017
+ Frame @ 1494179085 sec, 283687556 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 18
+System time is :Sun May  7 11:44:46 2017
+ Frame @ 1494179086 sec, 380272679 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 19
+System time is :Sun May  7 11:44:47 2017
+ Frame @ 1494179087 sec, 450880243 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 20
+System time is :Sun May  7 11:44:48 2017
+ Frame @ 1494179088 sec, 206705924 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 21
+System time is :Sun May  7 11:44:49 2017
+ Frame @ 1494179089 sec, 254810418 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 22
+System time is :Sun May  7 11:44:50 2017
+ Frame @ 1494179090 sec, 337572032 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 23
+System time is :Sun May  7 11:44:51 2017
+ Frame @ 1494179091 sec, 386580498 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 24
+System time is :Sun May  7 11:44:52 2017
+ Frame @ 1494179092 sec, 467895900 nsec,dt=1000.00 msec, avedt=1000.00 msec, rate= 1.00 fps, frame count = 25
+^C
+swaminath@Swaminath: ~/Videos/faceDetect_sample/Project_comp_arch
+swaminath@Swaminath:~/Videos/faceDetect_sample/Project_comp_arch$ exit
+exit
+
+Script done on Sun 07 May 2017 11:45:02 AM MDT
